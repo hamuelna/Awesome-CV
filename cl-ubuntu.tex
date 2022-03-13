@@ -1,0 +1,152 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./ham_profile.jpeg}
+\name{Worapol}{Boontanonda}
+\position{MSc Student{\enskip\cdotp\enskip} Ex Data Engineer}
+\address{Flat 28 Canal point, 22 West Tollcross Street, Edinburgh, United Kingdom}
+
+\mobile{(+44)7387507456}
+\email{worapol.study@gmail.com}
+\homepage{www.hamuel.me}
+\github{hamuelna}
+\linkedin{worapol-boontanonda}
+\stackoverflow{6696549}{hamuel}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Canonical\\Remote}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Recruitment Team}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Worapol Boontanonda~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+My name is Worapol Boontanonda and currently, I am pursuing an MSc in High Performance Computing.
+I will finish my dissertation at the end of August 2022 and should be able to start working from
+September 2022 onwards. My graduation will be sometime around October but attending the graduation is not mandatory.
+Before studying for the MSc I have worked as a Data Engineer for 3 years at Toyota Tsusho Nexty Electronics 
+however, I have performed a lot of tasks that are unrelated to my role such as Fullstack Development 
+and DevOps on the AWS Cloud. I believed my past experiences have proven me to be a person 
+with a can-do attitude. Although I need to perform these unrelated tasks I still manage to do them successfully. 
+Therefore, with this mindset, I can solve any engineering/software problem with the right tools. 
+Unfortunately, having the correct mindset is not enough 
+because having the correct skillset and expertise is also important. 
+I hope that this MSc will help fill the missing piece in my skillset to progress my career further.
+
+\lettersection{Why Canonical?}
+Ubuntu is one of the most used Linux distribution operating systems due to its ease of use. It will be an honour for me to work
+on one of the most used Linux distros. I always wanted to join the open-source community unfortunately due to my
+commitments on other projects while working in my old company. 
+Contributing to open-source projects is nearly impossible due to the commitments for my commercial customers in my
+old company. However, by joining Canonical I believed I will be allowed to freely contribute to the Ubuntu/Debian open-source community
+and fulfil one of my dreams.
+
+\lettersection{Why Me?}
+I think most of the skills listed in the job description matches both my past experiences and the MSc I am currently
+studying. After graduating I think I will have all the necessary skills to perform this job. I want to combine
+both my past industry experience in dealing with real production systems and new skills I am currently studying
+in order to write well maintained software.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
