@@ -8,56 +8,75 @@
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
-
-  %---------------------------------------------------------
   \cventry
-    {Game Developer} % Job title
-    {Mahidol University} % Organization
-    {Salaya, Thailand} % Location
-    {Jan. 2017 - Dec. 2017} % Date(s)
+  {Development Team Lead}
+  {InspektAI}
+  {Bangkok, Thailand (Hybrid)}
+  {June 2024 - Present}
+  {
+    \begin{cvitems}
+      \item {Distribute and digest work on Asana, this includes breaking down the requirement breaking down the task and assigning to appropriate team members}
+      \item {Give comments or modify existing requirement to make it implementable or clarify unclear requirements}
+      \item {Extend a code that map annotation on the 2D image onto a 3D model using photogrammetry data (cameras xml and point cloud) this includes parallelizing the code and optimizing the algorithm}
+      \item {Maintain the backend and image processing code}
+      \item {Manage the overall architecture of the whole system and how everything should be connected}
+      \item {Manage the infrastructure using both SAM/CDK/Elastic beanstalk }
+      \item {Database monitoring / maintenance / query optimization}
+      \item {Setup celery for async processing and parallelize certain part of the backend system}
+    \end{cvitems}
+  }
+
+  \cventry
+  {Senior Backend Developer}
+  {InspektAI}
+  {Bangkok, Thailand (Hybrid)}
+  {August 2023 - June 2024}
+  {
+    \begin{cvitems}
+      \item {Redesign and implement the database from scratch using Django}
+      \item {Convert/Rewrite Django server side to Django Rest Framework make sure all endpoints must include a test case}
+      \item {Migrate data from old database to new database system this includes both images and data}
+      \item {Create multiple script for new image and machine learning processing pipeline}
+      \item {Convert existing machine learning and calculation to be in script format}
+      \item {Setup AWS Elastic Beanstalk for new system for easy scaling and deployment}
+      \item {Created an automated partial serverless image/3d processing pipeline using aws batch and integrate with existing system (Autoflow)}
+      \item {Review all backend pull request to control the quality and performance}
+    \end{cvitems}
+  }
+
+  \cventry
+    {Geospatial Architect} % Job title
+    {Envirometrics.io} % Organization
+    {Bangkok, Thailand (Remote)} % Location
+    {Sept. 2022 - August 2023} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a Unity C\# game call Fuekfon. The game is design for disabled people that recieve a stroke and lose the ability to move, it is design to make rehabilitation more engaging}
-        \item {Maintained Fuekfon game this include debugging and adding more features}
-        \item {Add more features to the game such as adding a timer to all of the game}
-        \item {Refactor some of the code to support highscore system for each user}
+      \item {Migrated a web application from GCP to Azure}
+      \item {Deploying application into Azure}
+      \item {Improve map tile loading of a web application by convert from GeoTIFF to cloud optimized GeoTIFF (COGs)}
+      \item {Evaluate the performance and feasibility of Azure planetary computer and Google's earth engine}
+      \item {Development of a new remote sensing platform using Django Rest Framework, Celery, NextJS and Azure}
+      \item {Dockerize machine learning models and convert data science code to be use in production (turning it into a microservice)}
       \end{cvitems}
     }
 
-
-%---------------------------------------------------------
   \cventry
-    {Backend Developer / Dev Ops} % Job title
-    {MUIC (Mahidol University International College)/ TTET (Toyota Tsusho Electronics Thailand)} % Organization
-    {Nakornpathom/Bangkok, Thailand} % Location
-    {May 2017 - July 2017} % Date(s)
+    {Student} % Job title
+    {EPCC, The University of Edinburgh} % Organization
+    {Edinburgh, United Kingdom} % Location
+    {Sept. 2021 - Aug. 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Collaborated in writing the window segmenter program to slice data for data analysis}
-        \item {Wrote deployment scripts for docker-machine to create AWS EC2 instances}
-        \item {Deployed and support data science team in running their program on EC2 instances this includes creating a Dockerfile for the data science code}
+        \item {Threaded programming using OpenMP - benchmarking and optimizing existing program using different scheduling options for parallel loop}
+        \item {Messaging passing programming using MPI to parallelize existing percolation simulation program}
+        \item {Benchmarking and optimizing application using different compilers and compilers flags}
+        \item {Converting an existing serial/CPU application to execute on a GPU using CUDA and OpenMP targets}
+        \item {Compiling and installing program on a GPU cluster - part of student cluster competition}
+        \item {Parallel Design Pattern - Parallelizing an N-body (bodies of planets) simulation using MPI}
+        \item {Maximizing the performance of HPCC and optimizing gprMax CUDA code - part of MSc. dissertation}
       \end{cvitems}
     }
 
-
-%---------------------------------------------------------
-  \cventry
-    {Data Engineer / Dev Ops / Backend Developer} % Job title
-    {MUIC (Mahidol University International College) / NEXTY (Toyota Tsusho Nexty Electronics Thailand)} % Organization
-    {Nakornpathom/Bangkok, Thailand} % Location
-    {Jan. 2018 - May. 2018} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Wrote a library to launch jobs/tasks on Kubernetes programmatically}
-        \item {Wrote a data pumper which pump information from the RDS into Kafka}
-        \item {Wrote a python connector that connect to Kafka and pull information to serve the client}
-        \item {Deployed web application of the system on docker machine}
-        \item {Wrote a live stream pumper which pump data from Kinesis into Kafka}
-        \item {Performance optimization in pumping and consuming data in Kafka}
-      \end{cvitems}
-    }
-
-  %---------------------------------------------------------
   \cventry
     {Data Engineer} % Job title
     {NEXTY (Toyota Tsusho Nexty Electronics Thailand) / TTMI (Toyota Tsusho Mobility Informatics)} % Organization
@@ -82,21 +101,49 @@
         \item {Wrote frontend application using React}
       \end{cvitems}
     }
+
   \cventry
-  {Student/Researcher} % Job title
-  {The University of Edinburgh} % Organization
-  {Edinburgh, United Kingdom} % Location
-  {Sept. 2021 - present} % Date(s)
-  {
-    \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Threaded programming using OpenMP - benchmarking and optimising existing program using different scheduling options for parallel loop}
-      \item {Messaging passing programming using MPI to parallelise existing percolation simulation program}
-      \item {Benchmarking and optimising application using different compilers and compilers flags}
-      \item {Converting an existing serial/CPU application to execute on a GPU using CUDA or OpenMP targets}
-      \item {Converting as existing serial scientific program into parallel using MPI}
-      \item {Compiling and installing program on a GPU cluster - part of student cluster competition}
-      \item {Scientific Report Writing - using graph and data/graphs to prove different hypothesis(es)}
-    \end{cvitems}
-  }
-%---------------------------------------------------------
+    {Data Engineer / Dev Ops / Backend Developer} % Job title
+    {MUIC (Mahidol University International College) / NEXTY (Toyota Tsusho Nexty Electronics Thailand)} % Organization
+    {Nakornpathom/Bangkok, Thailand} % Location
+    {Jan. 2018 - May. 2018} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Wrote a library to launch jobs/tasks on Kubernetes programmatically}
+        \item {Wrote a data pumper which pump information from the RDS into Kafka}
+        \item {Wrote a python connector that connect to Kafka and pull information to serve the client}
+        \item {Deployed web application of the system on docker machine}
+        \item {Wrote a live stream pumper which pump data from Kinesis into Kafka}
+        \item {Performance optimization in pumping and consuming data in Kafka}
+      \end{cvitems}
+    }
+    
+    \cventry
+      {Backend Developer / Dev Ops} % Job title
+      {MUIC (Mahidol University International College)/ TTET (Toyota Tsusho Electronics Thailand)} % Organization
+      {Nakornpathom/Bangkok, Thailand} % Location
+      {May 2017 - July 2017} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item {Collaborated in writing the window segmenter program to slice data for data analysis}
+          \item {Wrote deployment scripts for docker-machine to create AWS EC2 instances}
+          \item {Deployed and support data science team in running their program on EC2 instances this includes creating a Dockerfile for the data science code}
+        \end{cvitems}
+      }
+
+  \cventry
+    {Game Developer} % Job title
+    {Mahidol University} % Organization
+    {Salaya, Thailand} % Location
+    {Jan. 2017 - Dec. 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed a Unity C\# game call Fuekfon. The game is design for disabled people that receive a stroke and lose the ability to move, it is design to make rehabilitation more engaging}
+        \item {Maintained Fuekfon game this includes debugging and adding more features}
+        \item {Add more features to the game such as adding a timer to all the game}
+        \item {Refactor code to support highscore system for each user}
+      \end{cvitems}
+    }
+  
+
 \end{cventries}
